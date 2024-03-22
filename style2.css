@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Protest+Strike&display=swap');
+
+*,body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Navigation Bar Start */
+.navBar {
+    position: fixed;
+    background-color: transparent;
+    display: flex;
+    width: 100%;
+    height: 15svh;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.navBar .logo {
+    padding: 20px;
+}
+
+.navBar .logo .logoImg:hover {
+    width: 85px;
+    height: 85px;
+
+}
+
+.navBar .logo a .logoText:hover{
+    font-size: 47px;
+}
+
+.navBar .logo a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navBar .logo a .logoText {
+    padding: 10px;
+    font-size: 45px;
+    font-family: "Protest Guerrilla", sans-serif;
+    color: #000000;
+}
+
+.navBar .logo a .logoImg {
+    width: 80px;
+    height: 80px;
+}
+
+.active1 {
+    list-style: none;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 15%;
+}
+
+
+/* Navigation Bar Start */
+
+/* Hero Start */
+
+.hero { 
+    height: 100svh;
+    width: 100svw;
+    background-image: url(images/landing1.gif);
+    background-size: cover;
+}
+
+.hero .container a {
+    padding: 10px;
+    border-radius: 10%;
+    color: black;
+    text-decoration: none;
+    font-size: 50px;
+    font-family: "Protest Guerrilla", sans-serif;
+}
+
+.hero .container a:hover {
+    font-size: 52px;
+    transition: ease-in-out 0.3s;
+}
+
+.hero .container {
+    height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hero End */
+
+/* Footer Start */
+
+.footer {
+    height: 40svh;
+    background-color: black;
+}

@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,600;1,600&display=swap');
+
+
+*,body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+body{
+    background-image: url(images/bg.webp);
+    background-attachment: fixed;
+}
+
+/* Navigation Bar Start */
+.navBar {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.288);
+    width: 0;
+    height: 100%;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    z-index: 2;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.navigation {
+    position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */ 
+}
+
+.navBar .logo {
+    padding: 20px;
+    width: 32svw;
+}
+
+.navBar .logo .logoImg:hover {
+    width: 85px;
+    height: 85px;
+
+}
+
+.navBar .logo a .logoText:hover{
+    font-size: 46px;
+}
+
+.navBar .logo a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navBar .logo a .logoText {
+    padding: 10px;
+    font-size: 45px;
+    font-family: "Protest Guerrilla", sans-serif;
+    color: #fff;
+}
+
+.navBar .logoImg {
+    width: 80px;
+    height: 80px;
+}
+
+.active1 {
+    list-style: none;
+    padding: 10px;
+    background-color: rgb(238,212,125);
+    border-radius: 15%;
+}
+
+.active2 {
+    list-style: none;
+    padding: 10px;
+    background-color: rgb(241, 127, 207);
+    border-radius: 15%;
+}
+
+.active3 {
+    list-style: none;
+    padding: 10px;
+    background-color: crimson;
+    border-radius: 15%;
+}
+
+.active4 {
+    list-style: none;
+    padding: 10px;
+    background-color: rgb(40, 20, 220);
+    border-radius: 15%;
+}
+
+.navBar .navigation li a:hover {
+    border-radius: 15%;
+    padding: 10px;
+    text-decoration: underline;
+    font-size: 32px;
+    transition: ease-in-out 0.3s;
+}
+
+.navBar .navigation li {
+    list-style: none;
+    padding: 15px;
+}
+
+.navBar .navigation li a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #fff;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-style: normal;
+}
+
+.navBar .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #fff;
+}
+
+.navBar .closebtn:hover {
+    font-size: 62px;
+}
+
+.top {
+    width: 100svw;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.top .logo {
+    padding: 20px;
+    width: 32svw;
+}
+
+.top .logo .logoImg:hover {
+    width: 85px;
+    height: 85px;
+
+}
+
+.top .logo a .logoText:hover{
+    font-size: 46px;
+}
+
+.top .logo a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.top .logo a .logoText {
+    padding: 10px;
+    font-size: 45px;
+    font-family: "Protest Guerrilla", sans-serif;
+    color: #fff;
+    text-shadow: 5px 5px black ;
+}
+
+.top .logo h2{
+    position: fixed;
+    margin-left: 70px;
+    font-size: 35px;
+    font-family: "Protest Guerrilla", sans-serif;
+    color: #fff;
+    text-shadow: 5px 5px black ;
+}
+
+.top .logoImg {
+    width: 80px;
+    height: 80px;
+}
+
+.top .navButton{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 40px;
+    text-shadow: 2px 2px #fff ;
+}
+
+.top .navButton:hover{
+    cursor: pointer;
+    font-size: 42px;
+}
+
+
+
+/* Navigation Bar End */
+
+/* Hero Start */
+
+.hero { 
+    height: 100svh;
+    width: 100%;
+    background: url(images/2.png);
+    background-size: cover;
+}
+
+.hero .container a {
+    padding: 20px;
+    border-radius: 10%;
+    color: #fff;
+    background-color: black;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Protest Guerrilla", sans-serif;
+    margin-right: 30px;
+}
+
+.hero .container a:hover {
+    font-size: 32px;
+    transition: ease-in-out 0.3s;
+    background-color: #fff;
+    color: black;
+}
+
+.hero .container {
+    position: absolute;
+    bottom: 150px;
+    right: 80px;
+}
+
+.hero .yt {
+    position: absolute;
+    right: 3%;
+    bottom: 10%;
+}
+
+/* Hero End */
+
+/* Footer Start */
+
+.footer {
+    height: 25svh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+}
+
+.footer .logoImg {
+    padding: 10px;
+    width: 120px;
+    height: 120px;
+}
+
+.footer ul {
+    padding: 20px;
+    font-size: 20px;
+}
+
+.footer ul li {
+    list-style: none;
+    color: #fff;
+}
+
+.footer ul li a{
+    text-decoration: none;
+}
+
+.footer .paragraph {
+    color: #fff;
+    padding: 45px 20px 10px 20px;
+}
+
+.footer .icon {
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.footer .icon i {
+    font-size: 30px;
+    padding: 5px;
+    color: white;
+}
+
+/* Footer End */
+
+/* About Content */
+.aboutCharacters {
+    height: 100svh;
+}
+
+.aboutCharacters .char {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutCharacters p {
+    position: absolute;
+    color: #fff;
+    top: 20svh;
+    left: 70svw;
+    right: 10svw;
+
+}
+
+.aboutCharacters .changeChar {
+    position: absolute;
+    top: 30svh;
+    left: 20svh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutCharacters .changeChar a {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 35px;
+    color: #fff;
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
+
+.aboutCharacters .changeChar a:hover {
+    font-size: 40px;
+}
+
+.aboutCharacters .characterImg {
+    padding: 10px;
+    width: 400px;
+    height: fit-content;
+}
+
+/* about end */
+
+/* album start */
+.album-hero {
+    background-image: url(images/collage.jpg), url(images/album-bg.jpg);
+    background-position: right top, left top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.album-hero .albumLogo {
+    font-size: 60px;
+    color: white;
+    text-shadow: 5px 5px black;
+}
+
+.albumContent {
+    height: auto;
+    display: flex;
+}
+
+.albumContent .left img {
+    height: 700px;
+    padding: 40px;
+}
+
+.albumContent p {
+    font-size: 20px;
+    color: #fff;
+    padding: 50px 40px 20px 40px;
+}
+
+.albumContent .albumMusics {
+    color: #fbff00;
+    margin-left: 50px;
+}
+
+.albumContent .right ul {
+    padding: 20px 40px 50px 40px;
+}
+
+.albumContent .right ul li {
+    list-style: none;
+}
+
+.albumContent .right ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    text-shadow: 2px 2px black;
+}
+
+.albumContent .right ul li a:hover {
+    font-size: 27px;
+}
+/* album end */
+
+/* Merchandise Start */
+.merchContent {
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.merchContent .title {
+    position: absolute;
+    color: #fbff00;
+    font-size: 50px;
+    top: 20svh;
+    left: 10svw;
+}
+
+.merchContent .items {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.merchContent .card {
+    height: 350px;
+    width: 300px;
+    background-color: rgb(29, 29, 29);
+    margin: 10px;
+    position: relative;
+}
+
+.merchContent .card img {
+    height: 250px;
+    width: 300px;
+}
+
+.merchContent .card .name {
+    padding: 5px 10px 10px 10px;
+    font-size: 25px;
+    color: #fbff00;
+}
+
+.merchContent .card .price {
+    padding: 0px 10px 10px 10px;
+    font-size: 20px;
+    color: #fbff00;
+}
+
+.merchContent .card .cta {
+    position: absolute;
+    font-size: 20px;
+    color: #fbff00;
+    padding: 10px;
+    margin: 10px;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.merchContent .card .cta:hover {
+    padding: 11px;
+    font-size: 21px;
+}
+
+.bgProduct{
+    background-image: url(images/Products/bgP.jpg);
+    filter: blur(8px);
+    background-size: cover;
+    height: 100svh;
+}
+
+.merchDesk {
+    position: absolute;
+    height: 100svh;
+    display: flex;
+    align-items: center;
+    top: 0  ;
+}
+
+.merchDesk .left img {
+    height: 500px;
+    padding: 0 10svw 0 10svw;
+}
+
+.merchDesk .right h1 {
+    font-size: 40px;
+    color: #fbff00;
+}
+
+.merchDesk .right p {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px #fff;
+}
+
+.merchDesk .right .cta {
+    font-size: 30px;
+    color: #fbff00;
+    text-decoration: none;
+}
+
+.merchDesk .right .cta:hover {
+    font-size: 32px;
+}
+/* Merchandise end */
+
+
